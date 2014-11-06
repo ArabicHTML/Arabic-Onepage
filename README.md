@@ -8,7 +8,7 @@ Responsive arabic one page powered by horus
 يمكنك تغير الايداهات ولا تنسى التغير في فايل الاستايل ايضا 
 You can change the id -> name but don't forget to change it in css file ;-)
 
-<pre>
+<code>
 
 <section id="home" class="item">
     <div class="container">
@@ -27,4 +27,4 @@ You can change the id -> name but don't forget to change it in css file ;-)
       Your text
     </div> <!-- End container -->
 </section> <!-- End section item -->
-</pre>
+</code>
