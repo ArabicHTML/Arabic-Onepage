@@ -1,0 +1,191 @@
+/*===================================================
+                    Helper Classes
+=====================================================*/
+
+.right {
+  float: right
+}
+
+.left {
+  float: left
+}
+
+.hide {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+  font: 0/0 a;
+  text-shadow: none
+}
+
+.hide:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 100%
+}
+
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+img {
+  width: auto\9;
+  height: auto;
+  width: 100%;
+  max-width: 100%
+}
+
+/*===================================================
+                    Grid System
+=====================================================*/
+
+
+*,*:after,*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.row {
+  width: 100%;
+  *zoom: 1
+}
+
+.row:before,.row:after {
+  display: table;
+  line-height: 0;
+  content: ""
+}
+
+.row:after {
+  clear: both
+}
+
+.row [class*="col"] {
+  float: right;
+  margin: 0 0 0 2.75454545455%
+}
+
+.row [class*="col"]:first-child {
+  margin-right: 0
+}
+
+.row [class*="col"]:last-child {
+  margin-left: 0
+}
+
+.row .col1 {
+  width: 5.801104972%
+}
+
+.row .col2 {
+  width: 14.364640883%
+}
+
+.row .col2-helf {
+  width: 14.364640883%
+}
+
+.row .col3 {
+  width: 22.928176794%
+}
+
+.row .col3-helf {
+  width: 22.928176794%
+}
+
+.row .col4 {
+  width: 31.491712705%
+}
+
+.row .col5 {
+  width: 40.055248616%
+}
+
+.row .col6 {
+  width: 48.618784527%
+}
+
+.row .col7 {
+  width: 57.182320438000005%
+}
+
+.row .col8 {
+  width: 65.74585634900001%
+}
+
+.row .col9 {
+  width: 74.30939226%
+}
+
+.row .col10 {
+  width: 82.87292817100001%
+}
+
+.row .col11 {
+  width: 91.436464082%
+}
+
+.row .col12 {
+  width: 99.999999993%
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px
+}
+
+/*===================================================
+                    Media queres
+=====================================================*/
+
+@media only screen and (max-width:768px) {
+  .row [class*="col"] {
+    float: none;
+    display: block
+  }
+  .row .col1,.row .col2,.row .col3,.row .col4,.row .col5,.row .col6,.row .col7,.row .col8,.row .col9,.row .col10,.row .col11,.row .col12
+    {
+    width: 100%
+  }
+
+  .row .col3-helf,.row .col2-helf{
+    width: 47%;
+    float:right;
+    display: inline-block;
+    margin-left: 5.8%;
+  }
+  
+  .row .col3-helf:nth-child(even),.row .col2-helf:nth-child(even){
+     margin-left: 0; 
+  }
+}
+
+@media only screen and (max-width:480px) {
+
+  .row .col3-helf,.row .col2-helf{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  
+}
+
+@media print {
+  * {
+    color: #000 !important;
+    text-shadow: none !important;
+    background: transparent !important;
+    box-shadow: none !important
+  }
+}
