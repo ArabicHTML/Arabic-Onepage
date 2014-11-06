@@ -1,0 +1,65 @@
+@import 'reset';
+@import 'grid';
+@import 'effects';
+@import url(http://fonts.googleapis.com/earlyaccess/dhurjati.css);
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+$nav     : #000000;
+$section1: #4D90FE;
+$section2: #DD4B39;
+$section3: #F1F1F1; 
+$section4: #777777;
+
+body{
+	color: white;
+	font-family: 'Dhurjati', serif;
+}
+
+header.header{
+	background: $nav;
+	position: fixed;
+	width: 100%;
+	.container{ padding: 10px; }
+	nav{
+		ul{
+			li{
+				padding: 0% 2%;
+				display: inline-block;
+				a{
+					color: lighten($section2, 35%);
+					text-decoration: none;
+					font-family: 'Droid Arabic Kufi', serif;
+					i{ font-size: 1rem; }
+				}
+			}
+		}
+	}
+}
+
+section.item{
+	width: 100%;
+	display: table;
+	height: 100vh;
+	padding-top: 10%;
+}
+
+section.item h1{
+	font-family: 'Droid Arabic Kufi', serif;
+}
+
+section#home{
+	background: $section1;
+}
+
+section#tags{
+	background: $section2;
+}
+
+section#code{
+	color: $nav;
+	background: $section3;
+}
+
+section#contact{
+	background: $section4;
+}
